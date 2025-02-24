@@ -1,6 +1,6 @@
 body {
     font-family: Poppins, sans-serif;
-    background-color: #fff8dc;
+    background-color: #fec180;
     color: #333;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ header h1, header h2 {
 section {
     max-width: 800px;
     margin: 20px auto;
-    background: white;
+    background: #fff8dc;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
