@@ -34,8 +34,9 @@ h3 {
 
 .section-content {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: column;  /* Ensure stacking order is top (image) -> bottom (text) */
+    align-items: center;  /* Center align everything */
+    text-align: center;  /* Center text below the image */
     gap: 10px;
 }
 
