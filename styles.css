@@ -41,7 +41,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: Playfair Display, Lora, serif;
+    font-family: Cormorant Garamond, Nunito Sans, serif;;
     font-size: 1.2em;
 }
 
@@ -87,7 +87,7 @@ footer {
     background: url('header.jpg') no-repeat center center/cover;
     color: #ffd700; /* Gold text for contrast */
     text-align: center;
-    padding: 50px;
+    padding: 60px;
     font-family: Merriweather, serif;
     font-size: 2em;
     min-height: 180px;
