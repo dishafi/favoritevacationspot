@@ -87,10 +87,10 @@ footer {
     background: url('header.jpg') no-repeat center center/cover;
     color: #ffd700; /* Gold text for contrast */
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     font-family: Merriweather, serif;
     font-size: 2em;
-    min-height: 200px;
+    min-height: 180px;
     position: relative;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
