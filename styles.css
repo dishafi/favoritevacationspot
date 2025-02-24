@@ -59,7 +59,8 @@ h3 {
     display: flex;
     flex-direction: column;  /* Ensure stacking order is top (image) -> bottom (text) */
     align-items: center;  /* Center align everything */
-    text-align: left;  /* Ensure text is left-aligned */
+    text-align: justify;  /* Ensure text is justify-aligned */
+    text-indent: 10px;  /* Indent first line of paragraphs */
     gap: 5px; /* Reduced spacing between elements */
 }
 
