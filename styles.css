@@ -45,6 +45,9 @@ section {
     font-size: 1.2em;
 }
 
+p {
+    margin-bottom: 5px; /* Reducing space between paragraphs */
+
 h3 {
     color: #ff4500;
     font-family: Merriweather, serif;
@@ -55,7 +58,7 @@ h3 {
     display: flex;
     flex-direction: column;  /* Ensure stacking order is top (image) -> bottom (text) */
     align-items: center;  /* Center align everything */
-    text-align: center;  /* Center text below the image */
+    text-align: left;  /* Ensure text is left-aligned */
     gap: 5px; /* Reduced spacing between elements */
 }
 
