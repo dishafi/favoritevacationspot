@@ -57,11 +57,62 @@ h3 {
 
 .section-content {
     display: flex;
-    flex-direction: column;  /* Ensure stacking order is top (image) -> bottom (text) */
+    flex-direction: column;  /* Image on top, text below */
     align-items: center;  /* Center align everything */
-    text-align: justify;  /* Ensure text is justify-aligned */
-    text-indent: 20px;  /* Indent first line of paragraphs */
-    gap: 5px; /* Reduced spacing between elements */
+    text-align: justify;  /* Make text easier to read */
+    max-width: 80%; /* Prevent text from stretching too wide */
+    line-height: 1.6; /* Improve readability */
+    font-size: 18px; /* Slightly larger text */
+    font-weight: 400; /* Modern, clean look */
+    gap: 10px; /* Balanced spacing */
+    
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* First paragraph stands out more */
+.section-content p:first-of-type {
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    text-indent: 0; /* No indent for a polished look */
+}
+
+/* Animated underline for headings */
+.section-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+}
+
+.section-content h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #007BFF; /* Adjust to match your theme */
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.section-content h2:hover::after {
+    width: 100%;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section-content img {
